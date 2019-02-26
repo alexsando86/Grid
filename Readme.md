@@ -26,12 +26,6 @@
 ### grid
 
 ### grid-area
-<<<<<<< HEAD
-* item크기와 위치를 조절한다.
-=======
-* item의 크기와 위치를 조절한다.
-
-### grid-auto-columns
 * item 기둥(column)의 크기를 지정한다.
 
 ### grid-auto-flow
@@ -59,4 +53,3 @@
 
 ### grid-column-gap
 * item column사이의 공간을 지정
->>>>>>> some-new-alex
