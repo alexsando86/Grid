@@ -23,3 +23,7 @@
 - [ ] grid-template-columns
 - [ ] grid-template-rows
 
+### grid
+
+### grid-area
+* item크기와 위치를 조절한다.
