@@ -1,4 +1,8 @@
 # CSS Grid
+## MDN 
+> https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Grid_Layout
+
+## Property
 
 - [ ] grid
 - [ ] grid-area
@@ -18,3 +22,4 @@
 - [ ] grid-template-areas
 - [ ] grid-template-columns
 - [ ] grid-template-rows
+
