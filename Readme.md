@@ -27,3 +27,7 @@
 
 ### grid-area
 * item크기와 위치를 조절한다.
+* grid-area : row-start / column-start / row-end / column-end;
+
+### grid-auto-columns
+* item기둥(column)의 크기를 지정한다.
