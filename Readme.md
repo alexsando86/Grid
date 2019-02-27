@@ -3,7 +3,11 @@
 - > https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Grid_Layout
 - > https://medium.com/deemaze-software/css-grid-layout-crossed-sections-fca9e956e725?sk=4a50491079fec5afaa0788e9347fbefa
 
+***
+
 ## Grid? 
+
+***
 
 ## grid box 요소
 >
@@ -30,6 +34,7 @@
     grid-row-end;
     grid-row-gap;
     grid-template-areas;
+***
 
 ## Property
 
@@ -52,6 +57,8 @@
 - [ ] grid-template-columns
 - [ ] grid-template-rows
 
+***
+
 ### grid
 * 모든 명시 적 그리드 속성 (그리드 템플릿 행, 그리드 템플릿 열 및 그리드 템플릿 영역)과 모든 암시 적 그리드 속성 (그리드 자동 행, 그리드 자동 열 및 그리드 자동 흐름)을 단일 선언으로 제공합니다.
 
@@ -66,11 +73,17 @@
 * grid-area : header;
 * grid-area : sidebar;
 
+***
+
 ### grid-auto-flow
 * item 배치방향을 지정한다. row 또는 column
 
+***
+
 ### grid-auto-rows
 * row의 크기를 지정한다.
+
+***
 
 ### grid-column
 * 그리드 column항목의 크기와 위치를 지정한다.
@@ -83,9 +96,12 @@
 * item의 column 끝나는 위치를 지정
 >
     grid-column-end : 3;
+
 ***
 ### grid-column-gap
 * item column사이의 공간을 지정
+
+***
 
 ### grid-column-start
 * item의 column 시작하는 위치를 지정
@@ -115,10 +131,12 @@
 
 ### grid-row-gap
 * item row사이의 공간을 지정
+***
 
 ### grid-row-start
 * item의 row 시작하는 위치를 지정
 
+***
 >
     grid-row-start : 1;
 ***
