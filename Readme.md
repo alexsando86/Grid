@@ -26,14 +26,10 @@
 ### grid
 
 ### grid-area
-<<<<<<< HEAD
 * item 기둥(column)의 크기를 지정 또는 영역의 이름을 지정한다.
 * grid-area : row-start / column-start / row-end / column-end;
 * grid-area : header;
 * grid-area : sidebar;
-=======
-* item 기둥(column)의 크기를 지정한다.
->>>>>>> 811f2b1103b52cfa7df5762d5dfa738ae165e1b6
 
 ### grid-auto-flow
 * item 배치방향을 지정한다. row 또는 column
