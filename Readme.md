@@ -42,7 +42,6 @@
 * row의 크기를 지정한다.
 
 ### grid-column
-<<<<<<< HEAD
 * 그리드 column항목의 크기와 위치를 지정한다.
 ***
     grid-column : 1 / 3;
@@ -119,23 +118,3 @@
 ### grid-template-rows
 
     grid-template-rows: 1fr 30px 30px;
-=======
-* 그리드 항목의 크기와 위치를 지정한다.
-
-    ``` grid-column : 1 / 3;``` 
-    
-    ``` grid-column : start / end ```
-
-### grid-column-end
-* item의 column 끝나는 위치를 지정
-
-    ``` grid-column-end : 3 ```
-
-### grid-column-start
-* item의 column 시작하는 위치를 지정
-
-    ``` grid-column-start : 3 ```
-
-### grid-column-gap
-* item column사이의 공간을 지정
->>>>>>> 811f2b1103b52cfa7df5762d5dfa738ae165e1b6
