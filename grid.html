@@ -6,30 +6,256 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>css grid</title>
     <style>
-        h1 {font-size:12px;}
+        h1 {font-size:14px;}
+        h2 {font-size:12px;}
         .item1 {background-color:limegreen;}
         .item2 {background-color:hotpink;}
         .item3 {background-color:khaki;}
         .item4 {background-color:lightblue;}
         .item5 {background-color:lightgreen;}
-        .gridBox {
-            height:200px;
+        .grid {
+            /* height:200px; */
             padding: 10px;
             background-color:orange;
             display:grid;
-            gap:10px;
-            grid-template-columns: repeat(3, 1fr);
+        }
+        .grid-auto-flow {
+            grid-auto-flow: column;
+        }
+        
+        /* 암시 적으로 생성 된 격자 열 트랙의 크기를 지정합니다. */
+        .grid-auto-columns {
+            grid-auto-columns: min-content;
+        }
+
+        .grid-auto-rows {
+            grid-auto-rows: 50px;
+        }
+
+        /* 격자 열, 행 및 영역을 정의하기위한 속기 속성입니다. */
+        .grid-template {
+            grid-template: repeat(3,1fr) / repeat(2,1fr);
+        }
+
+        .grid-template-columns {
+            grid-template-columns: repeat(4, 1fr)
+        }
+
+        .grid-template-rows {
+            grid-template-rows: 1fr 2fr 3fr minmax(10px, 50px) 50px;
+        }
+        .grid-gap {
+            grid-gap: 10px;
+        }
+        .grid-column-gap {
+            grid-column-gap: 5px;
+        }
+        .grid-row-gap {
+            grid-row-gap: 5px;
+        }
+
+        
+        .grid-area, .grid-column, .grid-column-start, 
+        .grid-row, .grid-row-start, .grid-row-end,
+        .grid-template-areas {
+            grid-template-columns : repeat(5, 1fr);
+            grid-template-rows : repeat(5, 1fr);
+        }
+        .grid-area .item1 {
+            grid-area: 2 / 4;
+            /* grid-area: 2 / 2 / 3 / 4; */
+        }
+        .grid-column .item2 {
+            grid-column: 1 / 4;
+        }
+        .grid-column-start .item4 {
+            grid-column-start: 3;
+        }
+        .grid-column-end .item5 {
+            grid-column-end: 2;
+        }
+        .grid-row .item3{
+            grid-row: 1 / 4;
+        }
+        .grid-row-start {
+
+        }
+        .grid-row-end {
+
+        }
+        .grid-template-areas {
+
         }
     </style>
 </head>
 <body>
-    <h1>grid</h1>
-    <div class="gridBox">
-        <div class="item1">A</div>
-        <div class="item2">B</div>
-        <div class="item3">C</div>
-        <div class="item4">D</div>
-        <div class="item5">E</div>
+    <h1>box요소</h1>
+
+    <h2>grid</h2>
+    <div class="grid">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
     </div>
+    <hr>
+    <h2>grid-auto-flow</h2>
+    <div class="grid grid-auto-flow">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+    <hr>
+    <h2>grid-auto-columns</h2>
+    <div class="grid grid-auto-columns">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+    <hr>
+    <h2>grid-auto-rows</h2>
+    <div class="grid grid-auto-rows">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+    <hr>
+    <h2>grid-template</h2>
+    <div class="grid grid-template">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+    <hr>
+    <h2>grid-template-columns</h2>
+    <div class="grid grid-template-columns">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+    <hr>
+    <h2>grid-template-rows</h2>
+    <div class="grid grid-template-rows">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+    <hr>
+    <h2>grid-gap</h2>
+    <div class="grid grid-gap">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+    <hr>
+    <h2>grid-column-gap</h2>
+    <div class="grid grid-column-gap">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+    <hr>
+    <h2>grid-row-gap</h2>
+    <div class="grid grid-row-gap">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+
+    <hr style="border-color:#000">
+
+    <h1>item요소</h1>
+
+    <h2>grid-area</h2>
+    <div class="grid grid-area">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+    <hr>
+    <h2>grid-column</h2>
+    <div class="grid grid-column">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+    <hr>
+    <h2>grid-column-start</h2>
+    <div class="grid grid-column-start">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+    <hr>
+    <h2>grid-column-end</h2>
+    <div class="grid grid-column-end">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+    <hr>
+    <h2>grid-row</h2>
+    <div class="grid grid-row">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+    <hr>
+    <h2>grid-row-start</h2>
+    <div class="grid grid-row-start">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+    <hr>
+    <h2>grid-row-end</h2>
+    <div class="grid grid-row-end">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+    <hr>
+    <h2>grid-template-areas</h2>
+    <div class="grid grid-template-areas">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+    <hr>
 </body>
 </html>

@@ -9,6 +9,9 @@
 
 ***
 
+## fr(fraction) ?
+* 유연한 크기를 갖는 단위로 남은 공간을 사용한다.
+
 ## grid box 요소
 >
     display: grid;
@@ -28,11 +31,9 @@
     grid-column;
     grid-column-start;
     grid-column-end;
-    grid-column-gap;
     grid-row;
     grid-row-start;
     grid-row-end;
-    grid-row-gap;
     grid-template-areas;
 ***
 
@@ -68,22 +69,27 @@
 ***
 
 ### grid-area
-* item 기둥(column)의 크기를 지정 또는 영역의 이름을 지정한다.
-* grid-area : row-start / column-start / row-end / column-end;
-* grid-area : header;
-* grid-area : sidebar;
+* 그리드 item영역의 시작과 끝 위치를 지정하고 사이즈만큼 영역을 확보한다.
+>
+    grid-area : row-start / column-start / row-end / column-end;
+    grid-area : 2 / 3 / 5 / 4;
+    grid-area : header;
 
 ***
 
 ### grid-auto-flow
-* item 배치방향을 지정한다. row 또는 column
-
+* item이 배치될 방향 가로(column) 또는 세로(row)
+>
+    grid-auto-flow : column;
 ***
 
 ### grid-auto-rows
 * row의 크기를 지정한다.
 
 ***
+
+### grid-auto-columns
+* 암시 적으로 생성 된 격자 열 트랙의 크기를 지정합니다.
 
 ### grid-column
 * 그리드 column항목의 크기와 위치를 지정한다.
@@ -144,6 +150,8 @@
 * 영역을 정의한다.
 
 >
+    grid-template: repeat(4, 1fr) / repeat(2, 1fr);
+
     grid-template: 
         "a a a" 40px
         "b c c" 40px
@@ -171,3 +179,5 @@
 ### grid-template-rows
 >
     grid-template-rows: 1fr 30px 30px;
+
+## Grid와 FlexBox
