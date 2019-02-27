@@ -26,10 +26,14 @@
 ### grid
 
 ### grid-area
+<<<<<<< HEAD
 * item 기둥(column)의 크기를 지정 또는 영역의 이름을 지정한다.
 * grid-area : row-start / column-start / row-end / column-end;
 * grid-area : header;
 * grid-area : sidebar;
+=======
+* item 기둥(column)의 크기를 지정한다.
+>>>>>>> 811f2b1103b52cfa7df5762d5dfa738ae165e1b6
 
 ### grid-auto-flow
 * item 배치방향을 지정한다. row 또는 column
@@ -38,6 +42,7 @@
 * row의 크기를 지정한다.
 
 ### grid-column
+<<<<<<< HEAD
 * 그리드 column항목의 크기와 위치를 지정한다.
 ***
     grid-column : 1 / 3;
@@ -114,3 +119,23 @@
 ### grid-template-rows
 
     grid-template-rows: 1fr 30px 30px;
+=======
+* 그리드 항목의 크기와 위치를 지정한다.
+
+    ``` grid-column : 1 / 3;``` 
+    
+    ``` grid-column : start / end ```
+
+### grid-column-end
+* item의 column 끝나는 위치를 지정
+
+    ``` grid-column-end : 3 ```
+
+### grid-column-start
+* item의 column 시작하는 위치를 지정
+
+    ``` grid-column-start : 3 ```
+
+### grid-column-gap
+* item column사이의 공간을 지정
+>>>>>>> 811f2b1103b52cfa7df5762d5dfa738ae165e1b6
