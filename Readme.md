@@ -1,6 +1,35 @@
 # CSS Grid
 ## MDN 
-> https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Grid_Layout
+- > https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Grid_Layout
+- > https://medium.com/deemaze-software/css-grid-layout-crossed-sections-fca9e956e725?sk=4a50491079fec5afaa0788e9347fbefa
+
+## Grid? 
+
+## grid box 요소
+>
+    display: grid;
+    grid-auto-flow;
+    grid-auto-columns;
+    grid-auto-rows;
+    grid-template;
+    grid-template-columns;
+    gird-template-rows;
+    grid-gap;
+    grid-column-gap;
+    grid-row-gap;
+
+## grid item 요소
+>
+    grid-area;
+    grid-column;
+    grid-column-start;
+    grid-column-end;
+    grid-column-gap;
+    grid-row;
+    grid-row-start;
+    grid-row-end;
+    grid-row-gap;
+    grid-template-areas;
 
 ## Property
 
@@ -24,6 +53,12 @@
 - [ ] grid-template-rows
 
 ### grid
+* 모든 명시 적 그리드 속성 (그리드 템플릿 행, 그리드 템플릿 열 및 그리드 템플릿 영역)과 모든 암시 적 그리드 속성 (그리드 자동 행, 그리드 자동 열 및 그리드 자동 흐름)을 단일 선언으로 제공합니다.
+
+>
+    grid: auto-flow / 1fr 1fr 1fr;
+    grid: repeat(3, 80px) / auto-flow;
+***
 
 ### grid-area
 * item 기둥(column)의 크기를 지정 또는 영역의 이름을 지정한다.
@@ -39,14 +74,14 @@
 
 ### grid-column
 * 그리드 column항목의 크기와 위치를 지정한다.
-***
+>
     grid-column : 1 / 3;
     
     grid-column : start / end;
 ***
 ### grid-column-end
 * item의 column 끝나는 위치를 지정
-***
+>
     grid-column-end : 3;
 ***
 ### grid-column-gap
@@ -54,39 +89,43 @@
 
 ### grid-column-start
 * item의 column 시작하는 위치를 지정
-***
+>
     grid-column-start : 3;
 ***
 ### grid-gap
 * 그리드사이의 공간을 지정
 
-***
+>
     grid-gap : 10px;
 ***
 
 ### grid-row
 * 그리드 row항목의 크기와 위치를 지정한다.
-***
+>
     grid-row : 1 / 3;
     
     grid-row : start / end;
 ***
 ### grid-row-end
 * item의 row 끝나는 위치를 지정
-***
+
+>
     grid-row-end : 3;
 ***
+
 ### grid-row-gap
 * item row사이의 공간을 지정
 
 ### grid-row-start
 * item의 row 시작하는 위치를 지정
-***
+
+>
     grid-row-start : 1;
 ***
 ### grid-template
 * 영역을 정의한다.
-***
+
+>
     grid-template: 
         "a a a" 40px
         "b c c" 40px
@@ -100,7 +139,7 @@
 ### grid-template-areas
 * grid-areas로 명명된 격자의 영역을 지정.
 
-***
+>
     grid-template-areas: 
         "a a a"
         "b b b"
@@ -108,9 +147,9 @@
 ***
 
 ### grid-template-columns
-
+>
     grid-template-columns: 1fr 30px 30px;
     
 ### grid-template-rows
-
+>
     grid-template-rows: 1fr 30px 30px;
