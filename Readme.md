@@ -1,7 +1,10 @@
 # CSS Grid
 ## MDN 
-- > https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Grid_Layout
-- > https://medium.com/deemaze-software/css-grid-layout-crossed-sections-fca9e956e725?sk=4a50491079fec5afaa0788e9347fbefa
+> https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Grid_Layout
+
+> https://medium.com/deemaze-software/css-grid-layout-crossed-sections-fca9e956e725?sk=4a50491079fec5afaa0788e9347fbefa
+
+> https://uid.gitbook.io/css-grid/css-grid-guide
 
 ***
 
@@ -10,7 +13,7 @@
 ***
 
 ## fr(fraction) ?
-* 유연한 크기를 갖는 단위로 남은 공간을 사용한다.
+>사전적의미 : 부분,일부,분수 ... <br>유연한 크기를 갖는 단위로 남은 공간을 사용한다. <br>fr 단위는 유연한 단위로 그리드 컨테이너의 여유 공간을 비율로 나눠 설정합니다. 
 
 ## grid box 요소
 >
@@ -24,6 +27,9 @@
     grid-gap;
     grid-column-gap;
     grid-row-gap;
+    justify-items;
+    align-items;
+    justify-content;
 
 ## grid item 요소
 >
@@ -35,9 +41,11 @@
     grid-row-start;
     grid-row-end;
     grid-template-areas;
+    justify-self;
+    align-self;
 ***
 
-## Property
+## Properties
 
 - [ ] grid
 - [ ] grid-area
@@ -148,6 +156,7 @@
 ***
 ### grid-template
 * 영역을 정의한다.
+* grid-template-rows / grid-template-columns:  행/열 그리드 템플릿 설정
 
 >
     grid-template: repeat(4, 1fr) / repeat(2, 1fr);
@@ -176,8 +185,12 @@
 >
     grid-template-columns: 1fr 30px 30px;
     
+***
+
 ### grid-template-rows
 >
     grid-template-rows: 1fr 30px 30px;
 
+
 ## Grid와 FlexBox
+- X 또는 Y 중 하나의 축을 통해 요소를 배치하는 Flexbox와 달리, Grid는 2차원 축을 모두 사용해 요소를 배치할 수 있어 보다 강력하다.
