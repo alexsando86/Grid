@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>grid-gap</title>
+    <style>
+        h1 {font-size:14px;}
+        h2 {font-size:18px;}
+        .item1 {background-color:bisque;}
+        .item2 {background-color:aliceblue;}
+        .item3 {background-color:khaki;}
+        .item4 {background-color:lightblue;}
+        .item5 {background-color:lightgreen;}
+        .item6, .item7, .item8, .item9, .item10, 
+        .item11, .item12, .item13, .item14, .item15 {background-color:coral;}
+        .grid {
+            padding: 10px;
+            background-color:gainsboro;
+            display:grid;
+            grid-template: repeat(5, 1fr) / repeat(5, 1fr);
+        }
+        .grid > div:not([class])  {
+            background-color: #000;
+        }
+        .grid-gap{
+            grid-gap: 10px;
+        }
+        .grid-column-gap {
+            grid-column-gap: 10px;
+        }
+        .grid-row-gap {
+            grid-row-gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>grid gap</h2>
+    <div class="grid grid-gap">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>
+        <div class="item9">9</div>
+        <div class="item10">10</div>
+    </div>
+    
+    <h2>grid-column-gap</h2>
+    <div class="grid grid-column-gap">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>
+        <div class="item9">9</div>
+        <div class="item10">10</div>
+    </div>
+    
+    <h2>grid-row-gap</h2>
+    <div class="grid grid-row-gap">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>
+        <div class="item9">9</div>
+        <div class="item10">10</div>
+        <div class="item11">11</div>
+        <div class="item12">12</div>
+        <div class="item13">13</div>
+        <div class="item14">14</div>
+        <div class="item15">15</div>
+    </div>
+</body>
+</html>
