@@ -42,9 +42,9 @@
 				<section>
 					<h2>grid?</h2>
 					<ul>
-						<li>줄과 칼럼을 동시에 제어하고 배치할 수 있다.</li>
+						<li>줄과 칼럼을 동시에 제어하고 배치할 수 있습니다.</li>
 						<li>그리드는 수평선과 수직선이 교차해서 이루어진 집합체.</li>
-						<li>하나의 집합체는 세로 열을 그리고 다른 하나는 가로 행을 정의. 각 요소는 이러한 열과 행으로 된 라인을 따라 생성된 그리드에 배치할 수 있다.</li>
+						<li>하나의 집합체는 세로 열을 그리고 다른 하나는 가로 행을 정의. 각 요소는 이러한 열과 행으로 된 라인을 따라 생성된 그리드에 배치할 수 있습니다.</li>
 					</ul>
 				</section>
 				<section>
@@ -57,7 +57,7 @@
 				<section>
 					<section>
 						<h2>grid box 속성들</h2>
-						<p>grid를 선언한 껍데기(부모)와 그의 자식모델 item들로 구분된다.</p>
+						<p>grid를 선언한 껍데기(부모)와 그의 자식모델 item들로 구분 됩니다.</p>
 						<img src="./img/firefox.PNG" alt="">
 					</section>
 
@@ -185,14 +185,14 @@
 				<section>
 					<section>
 						<h2>grid items 속성들</h2>
-						<p>display: grid;로 선언된 요소의 하위요소들(자식)에 선언가능한 속성들.</p>
+						<p>display: grid;로 선언된 요소의 하위요소들(자식)에 선언가능한 속성들 입니다.</p>
 					</section>
 
 					<section>
 						<h3>grid-column-start</h3>
 						<h3>grid-column-end</h3>
 						<ul>
-							<li>그리드 열 내의 그리드 항목의 시작과 끝 위치를 지정.</li>
+							<li>그리드 열 내의 그리드 항목의 시작과 끝 위치를 지정 합니다.</li>
 							<li>value : auto, &lt;integer&gt;, &lt;custom-indent&gt;, span</li>
 						</ul>
 						<pre><code class="hljs">.item1 { grid-column-start: auto; }</code></pre>
@@ -204,7 +204,7 @@
 						<h3>grid-row-start</h3>
 						<h3>grid-row-end</h3>
 						<ul>
-							<li>그리드 항목의 행의 시작과 끝 위치를 지정.</li>
+							<li>그리드 항목의 행의 시작과 끝 위치를 지정 합니다.</li>
 							<li>value : auto, &lt;integer&gt;, &lt;custom-indent&gt;, span</li>
 						</ul>
 						<pre><code class="hljs">.item1 { grid-row-start: auto; }</code></pre>
@@ -215,7 +215,7 @@
 					<section>
 						<h3>grid-area</h3>
 						<ul>
-							<li>속기속성(grid-row-start, grid-column-start, grid-row-end and grid-column-end 값을 한번에 설정)으로, 그리드 항목의 크기와 위치를 제공하여 지정.</li>
+							<li>속기속성(grid-row-start, grid-column-start, grid-row-end and grid-column-end 값을 한번에 설정)으로, 그리드 항목의 크기와 위치를 제공하여 지정 합니다.</li>
 							<li>value : auto, &lt;integer&gt;, &lt;custom-indent&gt;, span</li>
 						</ul>
 						<pre><code class="hljs">.item1 { grid-area: auto / auto; }</code></pre>
@@ -228,8 +228,8 @@
 						<h3>grid-column</h3>
 						<h3>grid-row</h3>
 						<ul>
-							<li>격자 선의 범위, 선 또는 범위를 격자 선 배치에 기여하여 그리드 항목의 크기와 위치를 지정.</li>
-							<li>그리드 행의 크기와 위치를 그리드 행 시작 및 그리드 행 끝의 축약 속성으로 지정.</li>
+							<li>격자 선의 범위, 선 또는 범위를 격자 선 배치에 기여하여 그리드 항목의 크기와 위치를 지정 합니다.</li>
+							<li>그리드 행의 크기와 위치를 그리드 행 시작 및 그리드 행 끝의 축약 속성으로 지정 합니다.</li>
 							<li>value : auto, &lt;integer&gt;, &lt;custom-indent&gt;, span</li>
 						</ul>
 						<pre><code class="hljs">.item1 { grid-column: 2 / 5; }</code></pre>
@@ -240,7 +240,7 @@
 					<section>
 						<h3>justify-self</h3>
 						<ul>
-							<li>해당 축을 따라 정렬 컨테이너 내부에서 상자가 정렬되는 방식을 설정합니다.</li>
+							<li>해당 축을 따라 정렬 컨테이너 내부에서 상자가 정렬되는 방식을 설정 합니다.</li>
 						</ul>
 						<pre><code class="hljs">.item1 { justify-self: start; }</code></pre>
 						<p>example : <a href="./example/justify-self.html" target="_blank">justify-align-self.html</a></p>
@@ -260,8 +260,8 @@
 					<h2>flexbox와 grid</h2>
 					<ul>
 						<li>플랙스박스는 한 줄로 된 행 혹은 열 방향의 레이아웃과 같이 일차원의 레이아웃을 염두에 두고 설계되었다는 점입니다. 하지만, 그리드는 행과 열 모두를 염두에 둔 2차원적 레이아웃을 고려해서 설계되었습니다.</li>
-						<li>레이아웃을 조정할 때 오직 가로 행 혹은 세로 열 만이 고려 대상이라면 – 플랙스박스를 사용하십시오</li>
-						<li>레아아웃을 조정할 때 가로 행과 세로 열 모두를 염두에 두어야 한다면 – 그리드를 사용하십시오</li>
+						<li>레이아웃을 조정할 때 오직 가로 행 혹은 세로 열 만이 고려 대상이라면 – 플랙스박스를 사용하십시오.</li>
+						<li>레아아웃을 조정할 때 가로 행과 세로 열 모두를 염두에 두어야 한다면 – 그리드를 사용하십시오.</li>
 					</ul>
 					<p>example: <a href="./example/flex-grid.html" target="_blank">flex-grid.html</a></p>
 				</section>
