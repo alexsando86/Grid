@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flex-grid</title>
+    <style>
+        h1 {font-size:14px;}
+        h2 {font-size:18px;}
+        .item1 {background-color:bisque;}
+        .item2 {background-color:aliceblue;}
+        .item3 {background-color:khaki;}
+        .item4 {background-color:lightblue;}
+        .item5 {background-color:lightgreen;}
+        .item6, .item7, .item8, .item9, .item10, 
+        .item11, .item12, .item13, .item14, .item15 {background-color:coral;}
+        .grid {
+            height: 200px;
+            padding: 10px;
+            background-color:gainsboro;
+            display:grid;
+            grid-template: repeat(5, 1fr) / repeat(3, 1fr);
+        }
+        .flex {
+            display: flex;
+            padding: 10px;
+            flex-wrap: wrap;
+            background-color:gainsboro;
+        }
+        .flex > div {
+            flex: 1 1 100px;
+        }
+    </style>
+</head>
+<body>
+    <h2>flex</h2>
+    <div class="flex">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+
+    <h2>grid</h2>
+    <div class="grid">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+
+    <!-- <h2>grid-area3</h2>
+    <div class="grid grid-area3">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div> -->
+</body>
+</html>

@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>sonarQube</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+        <style>
+            .blue {color:tomato;font-style:normal;}
+        </style>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1 style="text-transform: inherit;">sonarQube</h1>
+                    <h3 style="text-transform: inherit;">Code Quality and Security</h3>
+                    <img src="./img/hero-image.png" alt="" width="700">
+					<p>
+						<small>육선도</small>
+					</p>
+				</section>
+
+				<section>
+					<h2>소나큐브 무엇인가?</h2>
+					<p>
+						소나큐브는 아키텍쳐와 설계, 코드 중복, 단위 테스트, 복잡도, 발생 가능한 잠재적인 버그, 코딩 규칙, 주석의 기준으로 프로젝트의 품질을 관리할 수 있는 오픈소스 정적 분석 도구입니다.
+                    </p>
+                    다운로드 : <a href="http://www.sonarqube.org">http://www.sonarqube.org</a>
+				</section>
+
+                <section>
+                    <h2>지원 언어</h2>
+                    <P style="word-break: break-all">ABAP,Android,C++,C,C#,COBOL,Flex,Groovy,Java,,Object-c,PHP,PL/I,PL/SQL,Python,RPG,VB.NET,VISUAL BASEIC6,<i class="blue">Javascript</i>, WEB(<i class="blue">HTML, CSS</i>, JSP, PHP, RUBY), XML</P>
+                </section>
+				<!-- Example of nested vertical slides -->
+				<section>
+                    <h2>장점 및 주요기능</h2>
+                    <ul>
+                        <li>적은 시간과 비용으로 요건에 대한 가시화 충족.</li>
+                        <li>지속적인 인스펙션(지속적인 통합처럼 지속적으로 코드 인스펙션을 통해 품질 문제를 해결.)</li>
+                        <li>품질 중앙화(조직의 다양한 언어로 개발된 코드의 품질을 가시화하고 단일 위치에 관리.)</li>
+                        <li>DevOps 통합(SonarQube는 다양한 빌드 시스템과 CI 엔진을 지원하여 DevOps에 쉽게 통합.)</li>
+                        <li>품질 요구사항 설정(품질 게이트를 통해 표준화된 코드 품질 요구사항을 설정.)</li>
+                        <li>다중 언어 분석</li>
+                        <li>플러그인 라이브러리(다수의 플러그인을 통해 SonarQube의 기능을 확장.)</li>
+                    </ul>
+				</section>
+                <section>
+                    <h4>preview</h4>
+                    <video width="100%" height="500" autoplay controls>
+                        <source src="./video/preview.mp4" type="video/mp4">
+                    </video>
+                </section>
+				<section>
+                    <section>
+                        <h4>preview</h4>
+                        <img src="./img/preview.png" alt="" width="600">
+                    </section>
+                    <section>
+                        <h4>Type</h4>
+                        <ul>
+                            <li>Bug : 코드가 손상되어 즉시 수정해야하는 코딩 오류입니다.</li>
+                            <li>Vulnerability(취약점) : 코드에서 공격하기 쉬운 지점.</li>
+                            <li>Codesmell(코드악취) : 코드를 혼란스럽고 유지하기 어려운 유지 보수성 문제.</li>
+                        </ul>
+                    </section>
+                    <section>                        
+                        <h4>심각도</h4>
+                        <ul>
+                            <li>Blocker : 응용 프로그램의 동작에 영향을 줄 가능성이 높은 버그 : 메모리 누수, 닫히지 않은 JDBC 연결</li>
+                            <li>Critical: 응용 프로그램의 동작에 영향을 줄 가능성이 낮은 버그 또는 보안 결함을 나타내는 문제</li>
+                            <li>Major : 발견되지 않은 코드 조각, 중복 된 블록, 사용되지 않은 매개 변수 등 개발자 생산성에 큰 영향을 줄 수있는 품질 결함</li>
+                            <li>Minor: 개발자 생산성에 약간 영향을 줄 수있는 품질 결함</li>
+                            <li>Info: 버그나품질결함이 아니지만 발견한 상태</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <p>iMac 원격 Analysis</p>
+                        <a href="#" target="_blank">10.0.0.0</a>
+                    </section>
+				</section>
+
+				<section>
+					<section>
+                        <h2>설치방법(win64기준)</h2>
+                        <ol>
+                            <li>java설치 (현재버전기준 jdk11이상버전 필요함)</li>
+                            <li>소나큐브 다운로드 후 적절한 위치에 복사</li>
+                        </ol>
+                    </section>
+                    <section>
+                        <h4 style="text-transform:inherit">sonar-qube7.9.1/conf/wrpper.conf</h4>
+                        <img src="./img/wrapper_conf.jpg" alt="" width="700">
+                        <p><span class="fragment highlight-blue visible">wrapper.java.command=</span>C:\Program Files\Java\jdk-12.0.2\bin\java</p>
+                    </section>
+                    <section>
+                        <h4 style="text-transform: inherit">sonar-qube7.9.1\bin\window-x86-64</h4>
+                        <p>위 경로로 들어간 후 관리자권한으로 아래를 차례로 실행합니다</p>
+                        <ol>
+                            <li>InstallNTService.bat</li>
+                            <li>StartNTService.bat</li>
+                            <li>StartSonar.bat</li>
+                        </ol>
+                    </section>
+                    <section>
+                        <img src="./img/execute.jpg" alt="" width="700">
+                        <p>관리자 권한으로 실행</p>
+                    </section>
+                    <section>
+                        <h4 style="text-transform:inherit">localhost:9000 접속</h4>
+                        <p>기본 소나큐브의 경로는 localhost:9000 입니다.</p>
+                        <p>접속이 확인 되면 성공.</p>
+                    </section>
+                    <section>
+                        <h4>프로젝트 생성</h4>
+                        <img src="./img/local_main.jpg" alt="">
+                        <ul>
+                            <li>ID : admin</li>
+                            <li>PW : admin</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4 style="text-transform: inherit">Create new project</h4>
+                        <img src="./img/local_main2.jpg" alt="">
+                    </section>
+                    <section>
+                        <h4 style="text-transform: inherit">Create new project</h4>
+                        <img src="./img/local_main3.jpg" alt="">
+                        <p>key값과 display name값을 기억해 두어야 합니다.</p>
+                    </section>
+                    <section>
+                        <h4 style="text-transform: inherit">복사해둔 key값을 넣고 생성하기</h4>
+                        <img src="./img/local_main4.jpg" alt="">
+                    </section>
+                    <section>
+                        <h4 style="text-transform: inherit">프로젝트 언어 선택</h4>
+                        <img src="./img/local_main5.jpg" alt="">
+                    </section>
+                    <section>
+                        <h4 style="text-transform: inherit">프로젝트 메인</h4>
+                        <img src="./img/local_main6.jpg" alt="">
+                        <p>생성완료</p>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h2>sonar scanner</h2>
+                        <small>다운로드: <a href="https://docs.sonarqube.org/latest/analysis/scan/sonarscanner/">https://docs.sonarqube.org/latest/analysis/scan/sonarscanner/</a></small>
+                    </section>
+                    <section>
+                        <p>다운을 받고 적절한곳에 압축을 풉니다.</p>
+                    </section>
+                    <section>
+                        <h4 style="text-transform: inherit">sonar-scanner-cli-4.0.0.1744-windows\conf\sonar-scanner.properties</h4>
+                        <img src="./img/sonarscanner.jpg" alt="">
+                        <p>메모해 두었던 프로젝트 key값 입력</p>
+                    </section>
+                    <section>
+                        <h4 style="text-transform: inherit">sonar-scanner.properties 설정</h4>
+                        <ul>
+                            <li>sonar.host.url=http://localhost:9000</li>
+                            <li>sonar.projectKey=<span class="fragment highlight-red visible">testkey</span></li>
+                            <li>sonar.projectVersion=1.0</li>
+                            <li>sonar.sourceEncoding=UTF-8</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4 style="text-transform: inherit">sonar-project.properties</h4>
+                        <p>분석해야할 프로젝트 루트 폴더에 sonar-project.properties 파일을 만듭니다.</p>
+                        <p>root : D:\UIDEV</p>
+                        <ul>
+                            <li>sonar.projectKey=<span class="fragment highlight-red visible">testkey</span></li>
+                            <li>sonnar.projectName=<span class="fragment highlight-red visible">develop</span></li>
+                            <li>sonar.projectVersion=1.0</li>
+                            <li>sonar.sources=./</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <img src="./img/projectproperties.jpg" alt="">
+                        <small>루트에 만들었기 때문에 sonar.sources=./ 를 따로 설정하지 않습니다.</small>
+                    </section>
+                    <section>
+                        <small>기본 버전을 편리하게 사용하기 위해서는 sonarQube scanner bin디렉터리를 Path에 추가해주는 것이 좋습니다.</small>
+                        <img src="./img/환경변수등록.jpg" alt="">
+                    </section>
+                    <section>
+                        <h4 style="text-transform: inherit">sonar-scanner 실행</h4>
+                        <img src="./img/cmd_sonar_scanner.jpg" width="600" alt="">
+                        <ol>
+                            <li>터미널에서 sonar-project.properties가 위치한 폴더로 이동합니다.</li>
+                            <li>sonar-scanner 실행 합니다.</li>
+                            <li>분석이 시작되고 끝나면 localhost:9000으로 접속 후 확인 합니다.</li>
+                        </ol>
+                    </section>
+                    <section>
+                        <h4>분석제외 및 파일제외</h4>
+                        <p>환경설정 -> 분석제외</p>
+                        <img src="./img/ignore.PNG" alt="">
+                        <a href="https://docs.sonarqube.org/latest/project-administration/narrowing-the-focus/#NarrowingtheFocus-issues" target="_blank"><small>https://docs.sonarqube.org/latest/project-administration/narrowing-the-focus/#NarrowingtheFocus-issues</small></a>
+                    </section>
+                    <section>
+                        <ul>
+                            <li>
+                                <p>Ignore Issues on Files</p>
+                                <small>정규표현식과 일치하는 코드 블록을 포함하는 파일에 대한 이슈를 제외합니다.</small>
+                            </li>
+                            <li>
+                                <p>Ignore Issues in Blocks</p>
+                                <small>특정 코드 블럭의 모든 이슈를 제외하고 반면 남은 파일은 계속 검사 수행합니다.</small>
+                            </li>
+                            <li>
+                                <p>Ignore Issue on Multiple Criteria</p>
+                                <small>특정 컴포넌트의 이슈와 특정 코딩 룰을 제외합니다.</small>
+                            </li>
+                            <li>
+                                <p>Restrict Scope of Coding Rules</p>
+                                <small>특정 컴포넌트에는 규칙을 적용하고 다른 모든 컴포넌트는 제외합니다.</small>
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4>분석 파라미터</h4>
+                        <ul>
+                            <li>sonar-scanner -Dsonar.scm.disabled=True</li>
+                            <li>sonar-scanner -Dsonar.exclusions=.map</li>
+                            <li>sonar-scanner -Dsonar.projectBaseDir=D:\work\ssgui</li>
+                        </ul>
+                        <p>소나파라미터 : <a href="https://docs.sonarqube.org/latest/analysis/analysis-parameters/"><small>https://docs.sonarqube.org/latest/analysis/analysis-parameters/</small></a></p>
+                    </section>
+                    <section>
+                        <img src="./img/error.PNG" alt="">
+                        <p><small>분석이 완료된 후 소나큐브로 리포팅을 하는 과정에서 실패</small></p>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>sonar cloud</h2>
+                        <small><a href="https://sonarcloud.io" target="_blank">https://sonarcloud.io</a></small>
+                        <p><small>오픈소스의 프로젝트의 경우 무료로 이용가능합니다.</small></p>
+                    </section>
+                    <section>
+                        <img src="./img/cloud2.PNG" alt="">
+                    </section>
+                    <section>
+                        <img src="./img/cloud3.PNG" alt="" width="500">
+                    </section>
+                    <section>
+                        <img src="./img/cloud4.PNG" alt="">
+                        <p>key값 생성</p>
+                    </section>
+                    <section>
+                        <img src="./img/cloud5.PNG" alt="">
+                        <p>Free plan</p>
+                    </section>
+                    <section>
+                        <img src="./img/cloud6.PNG" alt="">
+                        <p>선택된 레포지토리에 설치</p>
+                    </section>
+                    <section>
+                        <img src="./img/cloud7.PNG" alt="" width="500">
+                    </section>
+                    <section>
+                        <img src="./img/cloud8.PNG" alt="">
+                        <p>SonarCloud 자동분석 실행</p>
+                    </section>
+                    <section>
+                        <img src="./img/cloud6-1.PNG" alt="" width="700">
+                        <ul>
+                            <li>선택된 레포지토리에 새로운 파일생성</li>
+                            <li>.sonarcloud.properties</li>
+                            <li>Commit</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <img src="./img/cloud9.png" alt="">
+                    </section>
+                </section>
+
+				<section>
+                    <h2 style="text-transform: inherit;">Jenkins</h2>
+                    <ul>
+                        <li>소나큐브는 주로 Jenkins CI서버와 연동하여 사용합니다</li>
+                        <li>Github 에 commit 이 등록되면 Jenkins 는 자동으로 빌드를 시작 합니다. </li>
+                        <li>Jenkin은 단순 빌드 성공 실패를 떠나서, 코드 품질에 대한 몇가지 report 를 발생 시킵니다.</li>
+                        <li>Jenkins 에서 빌드하면서 SonarQube 에 포함된 분석 기능을 사용여 코드를 분석합니다.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>참고</h2>
+                    <ul style="font-size:30px;">
+                        <li>https://docs.sonarqube.org/latest/</li>
+                        <li>https://confluence.curvc.com/display/ASD/SonarSource+Product</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h2>느낀점</h2>
+                    <p>영어를 잘해야 됨.</p>
+                </section>
+
+				<section style="text-align: left;">
+					<h1>THE END</h1>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

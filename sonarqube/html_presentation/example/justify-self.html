@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>justify-self</title>
+    <style>
+        h1 {font-size:14px;}
+        h2 {font-size:18px;}
+        .item1 {background-color:bisque;}
+        .item2 {background-color:aliceblue;}
+        .item3 {background-color:khaki;}
+        .item4 {background-color:lightblue;}
+        .item5 {background-color:lightgreen;}
+        .item6, .item7, .item8, .item9, .item10, 
+        .item11, .item12, .item13, .item14, .item15 {background-color:coral;}
+        .grid {
+            height: 200px;
+            padding: 10px;
+            background-color:gainsboro;
+            display:grid;
+            grid-template: repeat(5, 1fr) / repeat(5, 1fr);
+        }
+        .justify-self-start .item1{
+            justify-self: start;
+        }
+        .justify-self-end .item1{
+            justify-self: end;
+        }
+        .justify-self-center .item1{
+            justify-self: center;
+        }
+        .justify-self-stretch .item1{
+            justify-self: stretch;
+        }
+    </style>
+</head>
+<body>
+    <h2>justify-self: start</h2>
+    <div class="grid justify-self-start">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+    
+    <h2>justify-self: end</h2>
+    <div class="grid justify-self-end">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+    
+    <h2>justify-self: center</h2>
+    <div class="grid justify-self-center">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+    
+    <h2>justify-self: stretch</h2>
+    <div class="grid justify-self-stretch">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+</body>
+</html>
