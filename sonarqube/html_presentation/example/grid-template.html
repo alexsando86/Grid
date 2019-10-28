@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>grid-template-columns</title>
+    <style>
+        h1 {font-size:18px;}
+        h2 {font-size:12px;}
+        .item1 {background-color:bisque;}
+        .item2 {background-color:aliceblue;}
+        .item3 {background-color:khaki;}
+        .item4 {background-color:lightblue;}
+        .item5 {background-color:lightgreen;}
+        .grid {
+            padding: 10px;
+            background-color:gainsboro;
+            display:grid;
+        }
+        .grid-template {
+            grid-template: repeat(5, 1fr) / repeat(3, 1fr);
+        }
+        /*  grid-template-areas grid-template-rows / grid-template-column values */
+        .grid-template2 {
+            grid-template:  "item1 item2 item3 item4 item5" 40px / 1fr 2fr 1fr 1fr 1fr;
+            
+        }
+        .grid-template2 .item1 {grid-area: item1;}
+        .grid-template2 .item2 {grid-area: item2;}
+        .grid-template2 .item3 {grid-area: item3;}
+        .grid-template2 .item4 {grid-area: item4;}
+        .grid-template2 .item5 {grid-area: item5;}
+    </style>
+</head>
+<body>
+    <h1>grid-template</h1>
+    <div class="grid grid-template">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+    </div>
+    
+    <h1>grid-template2</h1>
+    <div class="grid grid-template2">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+</body>
+</html>

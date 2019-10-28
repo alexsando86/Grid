@@ -1,0 +1,112 @@
+/*
+
+Zenburn style from voldmar.ru (c) Vladimir Epifanov <voldmar@voldmar.ru>
+based on dark.css by Ivan Sagalaev
+
+*/
+
+.left {
+  text-align:left;
+}
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #3f3f3f;
+  color: #dcdcdc;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-tag {
+  color: #e3ceab;
+}
+
+.hljs-template-tag {
+  color: #dcdcdc;
+}
+
+.hljs-number {
+  color: #8cd0d3;
+}
+
+.hljs-variable,
+.hljs-template-variable,
+.hljs-attribute {
+  color: #efdcbc;
+}
+
+.hljs-literal {
+  color: #efefaf;
+}
+
+.hljs-subst {
+  color: #8f8f8f;
+}
+
+.hljs-title,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-section,
+.hljs-type {
+  color: #efef8f;
+}
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link {
+  color: #dca3a3;
+}
+
+.hljs-deletion,
+.hljs-string,
+.hljs-built_in,
+.hljs-builtin-name {
+  color: #cc9393;
+}
+
+.hljs-addition,
+.hljs-comment,
+.hljs-quote,
+.hljs-meta {
+  color: #7f9f7f;
+}
+
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.reveal h3 {
+  text-transform: lowercase;
+}
+.reveal h3 + h3 {
+  margin-top: -20px;
+}
+
+.reveal .link li {
+  line-height: 35px;
+  font-size: 35px;
+}
+.reveal .link a {
+  font-size: 25px;
+}
+
+.item1 {background-color:bisque;}
+.item2 {background-color:aliceblue;}
+.item3 {background-color:khaki;}
+.item4 {background-color:lightblue;}
+.item5 {background-color:lightgreen;}
+.grid {
+    /* height:200px; */
+    width: 500px;
+    margin: auto !important;
+    padding: 10px !important;;
+    background-color:gainsboro;
+    display:grid;
+}

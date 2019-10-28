@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>justify-content</title>
+    <style>
+        h1 {font-size:14px;}
+        h2 {font-size:18px;}
+        .item1 {background-color:bisque;}
+        .item2 {background-color:aliceblue;}
+        .item3 {background-color:khaki;}
+        .item4 {background-color:lightblue;}
+        .item5 {background-color:lightgreen;}
+        .item6, .item7, .item8, .item9, .item10, 
+        .item11, .item12, .item13, .item14, .item15 {background-color:coral;}
+        .grid {
+            padding: 10px;
+            background-color:gainsboro;
+            display:grid;
+            grid-template-columns: 100px auto 100px;
+            grid-template-rows: 50px auto 50px;
+        }
+        .justify-content-start {justify-content: start;}
+        .justify-content-end {justify-content: end;}
+        .justify-content-center {justify-content: center;}
+        .justify-content-stretch {justify-content: stretch;}
+        .justify-content-space-around{justify-content: space-around;}
+        .justify-content-space-between{justify-content: space-between;}
+        .justify-content-space-evenly {justify-content: space-evenly;}
+    </style>
+</head>
+<body>
+    <h2>justify-content: start</h2>
+    <div class="grid justify-content-start">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+    </div>
+    
+    <h2>justify-content: end</h2>
+    <div class="grid justify-content-end">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+    </div>
+    
+    <h2>justify-content: center</h2>
+    <div class="grid justify-content-center">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+    </div>
+    
+    <h2>justify-content: stretch</h2>
+    <div class="grid justify-content-stretch">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+    </div>
+    
+    <h2>justify-content: space-around</h2>
+    <div class="grid justify-content-space-around">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+    </div>
+    
+    <h2>justify-content: space-between</h2>
+    <div class="grid justify-content-space-between">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+    </div>
+    
+    <h2>justify-content: space-evenly</h2>
+    <div class="grid justify-content-space-evenly">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+    </div>
+</body>
+</html>
