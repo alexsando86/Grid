@@ -78,16 +78,18 @@
                     </ul>
 				</section>
                 <section>
-                    <h4>preview</h4>
-                    <video width="100%" height="500" autoplay controls>
-                        <source src="./video/preview.mp4" type="video/mp4">
-                    </video>
-                </section>
-				<section>
                     <section>
                         <h4>preview</h4>
+                        <video width="100%" height="500" controls>
+                            <source src="./video/sonar_test.mp4" type="video/mp4">
+                        </video>
+                    </section>
+                    <section>
+                        <h4>DashBoard</h4>
                         <img src="./img/preview.png" alt="" width="600">
                     </section>
+                </section>
+				<section>
                     <section>
                         <h4>Type</h4>
                         <ul>
@@ -107,8 +109,42 @@
                         </ul>
                     </section>
                     <section>
-                        <p>iMac 원격 Analysis</p>
+                        <p>iMac</p>
                         <a href="#" target="_blank">10.0.0.0</a>
+                    </section>
+                    <section>
+                        <h4>분석제외 및 파일제외</h4>
+                        <p>환경설정 -> 분석제외</p>
+                        <img src="./img/ignore.PNG" alt="">
+                        <a href="https://docs.sonarqube.org/latest/project-administration/narrowing-the-focus/#NarrowingtheFocus-issues" target="_blank"><small>https://docs.sonarqube.org/latest/project-administration/narrowing-the-focus/#NarrowingtheFocus-issues</small></a>
+                    </section>
+                    <section>
+                        <ul>
+                            <li>
+                                <p>Ignore Issues on Files</p>
+                                <small>정규표현식과 일치하는 코드 블록을 포함하는 파일에 대한 이슈를 제외합니다.</small>
+                            </li>
+                            <li>
+                                <p>Ignore Issues in Blocks</p>
+                                <small>특정 코드 블럭의 모든 이슈를 제외하고 반면 남은 파일은 계속 검사 수행합니다.</small>
+                            </li>
+                            <li>
+                                <p>Ignore Issue on Multiple Criteria</p>
+                                <small>특정 컴포넌트의 이슈와 특정 코딩 룰을 제외합니다.</small>
+                            </li>
+                            <li>
+                                <p>Restrict Scope of Coding Rules</p>
+                                <small>특정 컴포넌트에는 규칙을 적용하고 다른 모든 컴포넌트는 제외합니다.</small>
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4>분석 파라미터</h4>
+                        <ul>
+                            <li>sonar-scanner -Dsonar.scm.disabled=True</li>
+                            <li>sonar-scanner -Dsonar.exclusions=.map</li>
+                        </ul>
+                        <p>분석파라미터 : <a href="https://docs.sonarqube.org/latest/analysis/analysis-parameters/" target="_blank"><small>https://docs.sonarqube.org/latest/analysis/analysis-parameters/</small></a></p>
                     </section>
 				</section>
 
@@ -169,7 +205,7 @@
                         <img src="./img/local_main5.jpg" alt="">
                     </section>
                     <section>
-                        <h4 style="text-transform: inherit">프로젝트 메인</h4>
+                        <h4 style="text-transform: inherit">대쉬보드 메인</h4>
                         <img src="./img/local_main6.jpg" alt="">
                         <p>생성완료</p>
                     </section>
@@ -225,39 +261,8 @@
                         </ol>
                     </section>
                     <section>
-                        <h4>분석제외 및 파일제외</h4>
-                        <p>환경설정 -> 분석제외</p>
-                        <img src="./img/ignore.PNG" alt="">
-                        <a href="https://docs.sonarqube.org/latest/project-administration/narrowing-the-focus/#NarrowingtheFocus-issues" target="_blank"><small>https://docs.sonarqube.org/latest/project-administration/narrowing-the-focus/#NarrowingtheFocus-issues</small></a>
-                    </section>
-                    <section>
-                        <ul>
-                            <li>
-                                <p>Ignore Issues on Files</p>
-                                <small>정규표현식과 일치하는 코드 블록을 포함하는 파일에 대한 이슈를 제외합니다.</small>
-                            </li>
-                            <li>
-                                <p>Ignore Issues in Blocks</p>
-                                <small>특정 코드 블럭의 모든 이슈를 제외하고 반면 남은 파일은 계속 검사 수행합니다.</small>
-                            </li>
-                            <li>
-                                <p>Ignore Issue on Multiple Criteria</p>
-                                <small>특정 컴포넌트의 이슈와 특정 코딩 룰을 제외합니다.</small>
-                            </li>
-                            <li>
-                                <p>Restrict Scope of Coding Rules</p>
-                                <small>특정 컴포넌트에는 규칙을 적용하고 다른 모든 컴포넌트는 제외합니다.</small>
-                            </li>
-                        </ul>
-                    </section>
-                    <section>
-                        <h4>분석 파라미터</h4>
-                        <ul>
-                            <li>sonar-scanner -Dsonar.scm.disabled=True</li>
-                            <li>sonar-scanner -Dsonar.exclusions=.map</li>
-                            <li>sonar-scanner -Dsonar.projectBaseDir=D:\work\ssgui</li>
-                        </ul>
-                        <p>소나파라미터 : <a href="https://docs.sonarqube.org/latest/analysis/analysis-parameters/"><small>https://docs.sonarqube.org/latest/analysis/analysis-parameters/</small></a></p>
+                        <h4>분석완료</h4>
+                        <img src="./img/preview.png" alt="" width="600">
                     </section>
                     <section>
                         <img src="./img/error.PNG" alt="">
